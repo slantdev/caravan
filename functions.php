@@ -47,7 +47,7 @@ function caravan_enqueue_vite_assets()
     wp_enqueue_script('caravan-main-js', VITE_SERVER . '/' . VITE_ENTRY_POINT, [], null, true);
   } else {
     // Production: load assets from the manifest
-    $manifest_path = get_stylesheet_directory() . '/dist/manifest.json';
+    $manifest_path = get_stylesheet_directory() . '/dist/.vite/manifest.json';
     if (file_exists($manifest_path)) {
       $manifest = json_decode(file_get_contents($manifest_path), true);
 
