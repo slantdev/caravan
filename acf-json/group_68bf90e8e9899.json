@@ -76,8 +76,8 @@
                     "pagination": 0,
                     "min": 0,
                     "max": 0,
-                    "collapsed": "",
-                    "button_label": "Add Row",
+                    "collapsed": "field_68bf91259ba0a",
+                    "button_label": "Add Card",
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
@@ -203,5 +203,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757389053
+    "modified": 1757389372
 }

@@ -29,7 +29,7 @@ if (! $headline && ! $description && ! $video_embed) {
 
 <section class="relative bg-gray-100">
 
-  <div class="relative mx-auto max-w-4xl container py-12 md:py-20 lg:py-28 xl:py-44">
+  <div class="relative mx-auto max-w-4xl container py-12 md:py-20 lg:py-28 xl:py-40">
     <div class="text-center">
       <?php if ($headline) : ?>
         <h1 class="!text-3xl !font-bold !my-0 lg:!text-4xl"><?php echo esc_html($headline); ?></h1>

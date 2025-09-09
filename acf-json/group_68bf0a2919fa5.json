@@ -116,7 +116,7 @@
             },
             "min": "",
             "max": "",
-            "button_label": "Add Row"
+            "button_label": "Add Section"
         }
     ],
     "location": [
@@ -137,5 +137,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757389029
+    "modified": 1757389348
 }
