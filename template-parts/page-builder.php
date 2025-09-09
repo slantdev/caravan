@@ -14,8 +14,11 @@ if (have_rows('section_builder', $the_id)) :
     if (get_row_layout() == 'page_banner') :
       get_template_part('template-parts/sections/page_banner');
 
-    elseif (get_row_layout() == 'hero_slider') :
-      get_template_part('template-parts/sections/hero_slider');
+    elseif (get_row_layout() == 'one_column_video') :
+      get_template_part('template-parts/sections/one_column_video');
+
+    elseif (get_row_layout() == 'cards_grid') :
+      get_template_part('template-parts/sections/cards_grid');
 
     endif;
 
