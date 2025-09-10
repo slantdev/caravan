@@ -29,7 +29,7 @@ if (! $headline && ! $description && ! $cards) {
 
 <section class="relative bg-white">
 
-  <div class="relative mx-auto max-w-screen-lg container py-12 md:py-20 lg:py-28">
+  <div class="relative mx-auto max-w-screen-lg container px-4 py-12 md:py-20 lg:py-28 xl:px-0">
     <div class="text-left">
       <?php if ($headline) : ?>
         <h2 class="!text-3xl !font-bold lg:!text-4xl"><?php echo esc_html($headline); ?></h2>
@@ -60,7 +60,7 @@ if (! $headline && ! $description && ! $cards) {
           $background_image_url = $background_image['url'] ?? '';
           $background_image_alt = $background_image['alt'] ?? $card_title;
         ?>
-          <a href="<?php echo esc_url($card_link); ?>" target="<?php echo esc_attr($card_target); ?>" title="<?php echo esc_attr($card_title_attr); ?>" class="group relative block overflow-hidden rounded-2xl aspect-3/2 !no-underline hover:!no-underline shadow-lg">
+          <a href="<?php echo esc_url($card_link); ?>" target="<?php echo esc_attr($card_target); ?>" title="<?php echo esc_attr($card_title_attr); ?>" class="group relative block overflow-hidden rounded-2xl aspect-5/3 !no-underline hover:!no-underline shadow-lg">
             <?php if ($background_image_url) : ?>
               <img src="<?php echo esc_url($background_image_url); ?>" alt="<?php echo esc_attr($background_image_alt); ?>" class="absolute inset-0 !h-full w-full object-cover transition-transform duration-300 group-hover:scale-105">
             <?php endif; ?>
@@ -70,7 +70,7 @@ if (! $headline && ! $description && ! $cards) {
             <?php endif; ?>
 
             <div class="relative flex h-full items-end justify-between py-4 pl-4 pr-1 text-white md:py-6 md:pl-6">
-              <h3 class="!text-xl !font-bold !my-0 md:!text-2xl lg:!text-3xl"><?php echo esc_html($card_title); ?></h3>
+              <h3 class="!text-xl !font-bold !my-0 md:!text-2xl lg:!text-3xl !leading-[1.1] md:!leading-[1.1] lg:!leading-[1.1]"><?php echo esc_html($card_title); ?></h3>
               <div class="flex-shrink-0 bg-white p-2 ml-4 opacity-75 transition-all duration-300 group-hover:scale-110 group-hover:opacity-100">
                 <svg class="h-6 w-6 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
