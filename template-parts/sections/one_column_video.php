@@ -20,6 +20,7 @@ if (empty($one_column_video)) {
 $headline    = $one_column_video['headline'] ?? '';
 $description = $one_column_video['description'] ?? '';
 $video_embed = $one_column_video['video_embed'] ?? '';
+$iframe_embed = $one_column_video['iframe_embed'] ?? '';
 
 // Don't render section if no content and no background.
 if (! $headline && ! $description && ! $video_embed) {
@@ -41,9 +42,14 @@ if (! $headline && ! $description && ! $video_embed) {
       <?php endif; ?>
     </div>
 
-    <?php if ($video_embed) : ?>
+    <?php if ($video_embed || $iframe_embed) : ?>
       <div class="mt-8 lg:mt-12 [&>iframe]:aspect-video [&>iframe]:w-full [&>iframe]:h-full">
-        <?php echo $video_embed; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+        <?php
+        if ($video_embed) :
+          echo $video_embed;
+        elseif ($iframe_embed) :
+          echo $iframe_embed;
+        endif;
         ?>
       </div>
     <?php endif; ?>
