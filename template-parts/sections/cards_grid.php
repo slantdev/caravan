@@ -29,13 +29,13 @@ if (! $headline && ! $description && ! $cards) {
 
 <section class="relative bg-white">
 
-  <div class="relative mx-auto max-w-screen-lg container px-4 py-12 md:py-20 lg:py-28 xl:px-0">
+  <div class="relative mx-auto max-w-screen-lg container px-4 py-12 md:py-16 lg:py-20 xl:px-0">
     <div class="text-left">
       <?php if ($headline) : ?>
         <h2 class="!text-3xl !font-bold lg:!text-4xl"><?php echo esc_html($headline); ?></h2>
       <?php endif; ?>
       <?php if ($description) : ?>
-        <div class="mt-4 text-lg prose max-w-none">
+        <div class="mt-4 text-base md:text-lg">
           <?php echo wp_kses_post($description); ?>
         </div>
       <?php endif; ?>

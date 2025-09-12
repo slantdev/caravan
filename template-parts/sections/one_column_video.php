@@ -30,13 +30,13 @@ if (! $headline && ! $description && ! $video_embed) {
 
 <section class="relative bg-gray-100">
 
-  <div class="relative mx-auto max-w-4xl container px-4 py-12 md:py-20 lg:py-28 xl:py-40">
+  <div class="relative mx-auto max-w-4xl container px-4 py-12 md:py-16 lg:py-20">
     <div class="text-center">
       <?php if ($headline) : ?>
-        <h1 class="!text-3xl !font-bold !my-0 lg:!text-4xl"><?php echo esc_html($headline); ?></h1>
+        <h1 class="!text-2xl !font-bold !my-0 md:!text-3xl lg:!text-4xl"><?php echo esc_html($headline); ?></h1>
       <?php endif; ?>
       <?php if ($description) : ?>
-        <div class="mt-4 max-w-none lg:mt-8 text-center text-lg">
+        <div class="mt-4 max-w-none lg:mt-8 text-center text-base md:text-lg">
           <?php echo wp_kses_post($description); ?>
         </div>
       <?php endif; ?>
